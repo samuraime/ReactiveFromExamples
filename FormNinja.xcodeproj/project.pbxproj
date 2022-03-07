@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB1D15772782C8FF003AEC7F /* ReactiveForm in Frameworks */ = {isa = PBXBuildFile; productRef = DB1D15762782C8FF003AEC7F /* ReactiveForm */; };
+		DB20E9532777093A00C7B07F /* BasicFormControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20E9522777093A00C7B07F /* BasicFormControlView.swift */; };
+		DB20E9552777094E00C7B07F /* BasicFormFieldView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20E9542777094E00C7B07F /* BasicFormFieldView.swift */; };
+		DB20E9572777097E00C7B07F /* ValidateOnSubmitView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20E9562777097E00C7B07F /* ValidateOnSubmitView.swift */; };
+		DB20E9592777098D00C7B07F /* ValidateOnChangeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB20E9582777098D00C7B07F /* ValidateOnChangeView.swift */; };
 		DB97A6ED276F41C3009FDC23 /* FormNinjaApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97A6EC276F41C3009FDC23 /* FormNinjaApp.swift */; };
 		DB97A6EF276F41C3009FDC23 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB97A6EE276F41C3009FDC23 /* ContentView.swift */; };
 		DB97A6F1276F41C5009FDC23 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB97A6F0276F41C5009FDC23 /* Assets.xcassets */; };
@@ -14,6 +19,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB20E9522777093A00C7B07F /* BasicFormControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFormControlView.swift; sourceTree = "<group>"; };
+		DB20E9542777094E00C7B07F /* BasicFormFieldView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicFormFieldView.swift; sourceTree = "<group>"; };
+		DB20E9562777097E00C7B07F /* ValidateOnSubmitView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateOnSubmitView.swift; sourceTree = "<group>"; };
+		DB20E9582777098D00C7B07F /* ValidateOnChangeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ValidateOnChangeView.swift; sourceTree = "<group>"; };
 		DB97A6E9276F41C3009FDC23 /* FormNinja.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FormNinja.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB97A6EC276F41C3009FDC23 /* FormNinjaApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormNinjaApp.swift; sourceTree = "<group>"; };
 		DB97A6EE276F41C3009FDC23 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -26,17 +35,45 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB1D15772782C8FF003AEC7F /* ReactiveForm in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB20E951277708F400C7B07F /* Examples */ = {
+			isa = PBXGroup;
+			children = (
+				DB20E9522777093A00C7B07F /* BasicFormControlView.swift */,
+				DB20E9542777094E00C7B07F /* BasicFormFieldView.swift */,
+				DB20E9562777097E00C7B07F /* ValidateOnSubmitView.swift */,
+				DB20E9582777098D00C7B07F /* ValidateOnChangeView.swift */,
+			);
+			path = Examples;
+			sourceTree = "<group>";
+		};
+		DB5A80292773806800D8EBB6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DB830EF427737A8F0057511D /* Packages */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Packages;
+			sourceTree = "<group>";
+		};
 		DB97A6E0276F41C3009FDC23 = {
 			isa = PBXGroup;
 			children = (
+				DB830EF427737A8F0057511D /* Packages */,
 				DB97A6EB276F41C3009FDC23 /* FormNinja */,
 				DB97A6EA276F41C3009FDC23 /* Products */,
+				DB5A80292773806800D8EBB6 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -51,6 +88,7 @@
 		DB97A6EB276F41C3009FDC23 /* FormNinja */ = {
 			isa = PBXGroup;
 			children = (
+				DB20E951277708F400C7B07F /* Examples */,
 				DB97A6EC276F41C3009FDC23 /* FormNinjaApp.swift */,
 				DB97A6EE276F41C3009FDC23 /* ContentView.swift */,
 				DB97A6F0276F41C5009FDC23 /* Assets.xcassets */,
@@ -83,6 +121,9 @@
 			dependencies = (
 			);
 			name = FormNinja;
+			packageProductDependencies = (
+				DB1D15762782C8FF003AEC7F /* ReactiveForm */,
+			);
 			productName = FormNinja;
 			productReference = DB97A6E9276F41C3009FDC23 /* FormNinja.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +152,9 @@
 				Base,
 			);
 			mainGroup = DB97A6E0276F41C3009FDC23;
+			packageReferences = (
+				DB1D15752782C8FF003AEC7F /* XCRemoteSwiftPackageReference "ReactiveForm" */,
+			);
 			productRefGroup = DB97A6EA276F41C3009FDC23 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +181,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DB20E9572777097E00C7B07F /* ValidateOnSubmitView.swift in Sources */,
+				DB20E9552777094E00C7B07F /* BasicFormFieldView.swift in Sources */,
 				DB97A6EF276F41C3009FDC23 /* ContentView.swift in Sources */,
+				DB20E9592777098D00C7B07F /* ValidateOnChangeView.swift in Sources */,
 				DB97A6ED276F41C3009FDC23 /* FormNinjaApp.swift in Sources */,
+				DB20E9532777093A00C7B07F /* BasicFormControlView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,7 +244,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -251,7 +299,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
@@ -341,6 +389,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DB1D15752782C8FF003AEC7F /* XCRemoteSwiftPackageReference "ReactiveForm" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/samuraime/ReactiveForm";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DB1D15762782C8FF003AEC7F /* ReactiveForm */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DB1D15752782C8FF003AEC7F /* XCRemoteSwiftPackageReference "ReactiveForm" */;
+			productName = ReactiveForm;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = DB97A6E1276F41C3009FDC23 /* Project object */;
 }

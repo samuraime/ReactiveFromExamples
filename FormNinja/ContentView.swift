@@ -1,21 +1,26 @@
-//
-//  ContentView.swift
-//  FormNinja
-//
-//  Created by Minhui Zhao on 2021/12/19.
-//
-
 import SwiftUI
+  // value of customization changes
 
 struct ContentView: View {
-    var body: some View {
-        Text("Hello, world!")
-            .padding()
+  var body: some View {
+    List {
+      NavigationLink(
+        "Basic usage with FormControl",
+        destination: BasicFormControlView()
+      )
+      NavigationLink(
+        "Basic usage with @FormField",
+        destination: BasicFormFieldView()
+      )
+      NavigationLink(
+        "Validate on Change",
+        destination: ValidateOnChangeView()
+      )
+      NavigationLink(
+        "Validate on Submit",
+        destination: ValidateOnSubmitView()
+      )
     }
-}
-
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+    .navigationTitle("Examples")
+  }
 }

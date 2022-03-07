@@ -1,0 +1,16 @@
+{
+  "object": {
+    "pins": [
+      {
+        "package": "ReactiveForm",
+        "repositoryURL": "https://github.com/samuraime/ReactiveForm",
+        "state": {
+          "branch": null,
+          "revision": "35ba7d2bfc2e049d62efe22aff8259469e5ae941",
+          "version": "0.1.0"
+        }
+      }
+    ]
+  },
+  "version": 1
+}
